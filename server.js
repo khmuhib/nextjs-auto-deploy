@@ -7,7 +7,7 @@ const hostname =
   process.env.NODE_ENV !== "production"
     ? "localhost"
     : "nextjs.kazicreatives.com";
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000 || 4789;
 // when using middleware `hostname` and `port` must be provided below
 const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
